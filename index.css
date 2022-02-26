@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    background: #281515;
+    color: #898989;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {
+    margin: 0;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1rem;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: .15rem;
+}
+
+img {
+    width: 100%;
+    height: 100vh;
+    display: block;
+    object-fit: cover;
+    opacity: 0.45;
+    border-radius: 30px;
+}
+
+.container {
+    max-width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.flex-class {
+    display: flex;
+    align-items: center;
+}
+
+.my-info-container {
+    height: 100%;
+    background: rgb(46, 13, 13, 0.3);
+    width: 50%;
+}
+
+.my-info {
+    margin-top:50vh;
+    text-align: center;
+}
+
+.my-picture {
+    width: 50%;
+    /* height: 100%; */
+    order: -1;
+}
+
+@media (max-width:720px) {
+
+    .container {
+        width: 100%;
+    }
+
+    .flex-class {
+        flex-direction: column;
+    }
+
+    .my-info {
+        order: -2;
+    }
+
+    .my-info-container {
+        height: 100vh;
+        width: 100%;
+    }
+
+    .my-info {
+        margin: 50vh 0;
+    }
+
+    .my-picture {
+        width: 100%;
+    }
+
+    img {
+        height: 100vh;
+    }
+
+}
