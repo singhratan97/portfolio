@@ -59,6 +59,7 @@ img {
 
     .container {
         width: 100%;
+        height: fit-content;
     }
 
     .flex-class {
@@ -79,11 +80,11 @@ img {
     }
 
     .my-picture {
-        width: 100%;
+        width: 100vh;
     }
-
+/* 
     img {
         height: 100vh;
-    }
+    } */
 
 }
